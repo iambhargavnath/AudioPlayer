@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/media_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitCenter"
+        app:tint="#008EFF"
+        android:src="@drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/media_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Title"
+        android:textColor="#008EFF"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+
+    <TextView
+        android:id="@+id/media_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="14sp"
+        android:textColor="#008EFF"
+        android:layout_marginEnd="8dp" />
+
+    <ImageButton
+        android:id="@+id/media_play_pause"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_media_play"
+        android:contentDescription="Play Pause Button"
+        app:tint="#008EFF" />
+
+</LinearLayout>
